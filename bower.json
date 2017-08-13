@@ -15,6 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-sessionstorage": "^1.1.5"
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.5"
   }
 }
