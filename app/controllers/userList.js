@@ -1,6 +1,6 @@
 var app = angular.module("fhApp");
 
-app.controller("fhController", ["$scope", "userService",
+app.controller("userListCtl", ["$scope", "userService",
     function ($scope, userService) {
 
         $scope.name = "Git User List";
@@ -38,7 +38,7 @@ app.controller("fhController", ["$scope", "userService",
                 return userService.getUsers(success, failure);
 
             userService.findUser($scope.searchText, function (e) {
-                console.log("success:", e);
+                // console.log("success:", e);
 
                 $scope.isNoUserFound = false;
                 $scope.users = [e.data];

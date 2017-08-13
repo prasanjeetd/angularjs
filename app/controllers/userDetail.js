@@ -1,6 +1,6 @@
 var app = angular.module("fhApp");
 
-app.controller("userDetail", ['$scope', "$routeParams", "gistService",
+app.controller("userDetailCtl", ['$scope', "$routeParams", "gistService",
     function ($scope, $routeParams, gistService) {
 
         $scope.userId = $routeParams.login;

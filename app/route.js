@@ -5,11 +5,11 @@ angular
         $routeProvider.
             when('/', {
                 templateUrl: 'views/user-list.html',
-                controller: 'fhController'
+                controller: 'userListCtl'
             }).
             when('/detail/:login', {
                 templateUrl: 'views/user-detail.html',
-                controller: 'userDetail'
+                controller: 'userDetailCtl'
             }).
             otherwise({
                 redirectTo: '/'

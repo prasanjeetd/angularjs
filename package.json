@@ -1,0 +1,30 @@
+{
+  "name": "foghorn-app",
+  "version": "1.0.0",
+  "description": "Foghorn exam",
+  "main": "",
+  "dependencies": {
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.5",
+    "karma-cli": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanjeetd/foghorn.git"
+  },
+  "author": "Prasanjeet Debnath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasanjeetd/foghorn/issues"
+  },
+  "homepage": "https://github.com/prasanjeetd/foghorn#readme"
+}
