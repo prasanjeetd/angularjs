@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foghorn Angular Exam</title>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="fhApp">
+
+    <div ng-view></div>
+
+    <script src="app.js"></script>
+    <script src="route.js"></script>
+    <script src="services/userServices.js"></script>
+    <script src="services/gistServices.js"></script>
+    <script src="controllers/userList.js"></script>
+    <script src="controllers/userDetail.js"></script>
+
+</body>
+
+</html>

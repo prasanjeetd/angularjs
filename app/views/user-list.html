@@ -1,0 +1,40 @@
+<div class="container">
+
+
+        <div class="row form-horizontal">
+            <h3 ng-bind="name"></h3>
+            <div class="col-*-* form-inline">
+                <label for="userInput">Find User</label>
+                <input type="textbox" ng-model="searchText" id="userInput" class="form-control" style="width:300px;" />
+                <button type="button" class="btn btn-default" ng-click="findUser()">Search</button>
+
+            </div>
+        </div>
+        <div class="row alert alert-danger" ng-show="isNoUserFound">
+            No User Found
+        </div>
+        <div class="row ">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th width="10">ID</th>
+                        <th width="100">Avatar</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in users">
+                        <td>{{ user.id }}</td>
+                        <td>
+                            <a href="#!/detail/{{user.login}}" >
+                                <img src="{{ user.avatar_url }}" height="120" width="120"></img>
+                            </a>
+                        </td>
+                        <td><a ng-href="{{user.html_url}}" target="_blank">
+                        {{ user.login }}</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

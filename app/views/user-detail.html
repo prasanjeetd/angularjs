@@ -1,0 +1,44 @@
+<div class="container">
+
+    <div class="row ">
+        <h1 style="display:inline;">User detail - {{userId}}</h1>
+
+        <span style="float:right;"><a href="#!/">User List</a> </span>
+    </div>
+    <div class="row well">
+        <h3>Add Gist</h3>
+        <form class="form-inline ">
+            <div class="form-row">
+                <label for="description" class="form-labels">Description:</label>
+                <input type="input" class="form-control form-inputs" id="description" ng-model="description" >
+            </div>
+            <div class="form-row">
+                <label for="content" class="form-labels">Content:</label>
+                <textarea class="form-control form-inputs" rows="3" id="content" ng-model="content"></textarea>
+            </div>
+            <button type="submit" ng-disabled="isGistPresent" class="btn btn-default form-add-button" ng-click="save()">Save</button>
+        </form>
+    </div>
+    <div class="row ">
+        <h3>User Gist List</h3>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="gist in userGists">
+                    <td>
+                        <a ng-href="{{getFileUrl(gist.files)}}" target="_blank">
+                        {{getFileName(gist.files)}}
+                        </a>
+                    </td>
+                    <td>{{ gist.description }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
