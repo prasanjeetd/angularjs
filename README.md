@@ -1,7 +1,7 @@
 ## Steps to install and run the app
 ### Run bower install on comand prompt to install all dependencies on the root folder
 ### Run the app/index.html file to start the app
-### To run tests enter karma run on the command prompt
+### To run tests enter karma start on the command prompt
 
 ## Application Overiew
 1. App has two views - User List and User Detail
