@@ -16,7 +16,6 @@ describe("userListCtl", function () {
 
             $controller = _$controller_;
 
-            // spyOn(us, 'getUsers').and.returnValue([{}]);
             spyOn(userService, 'findUser').and.callFake(function (username, success, failure) {
                 var data = {
                     "login": "prasanjeetd",
