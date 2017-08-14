@@ -1,5 +1,6 @@
 ## Steps to install and run the app
-### Run bower install on comand prompt to install all dependencies on the root folder
+### Run bower install on comand prompt on the root folder to install all client dependencies
+### Run npm install on comand prompt on the root folder to install all server dependencies 
 ### Run the app/index.html file to start the app
 ### To run tests enter karma start on the command prompt
 
